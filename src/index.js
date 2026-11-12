@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`)
 })
+app.get('/', (req, res) => {
+  res.status(200).json('Hola')
+  console.log('Funciona hola')
+})
 
 app.get('/health', (req, res) => {
   res.json({
