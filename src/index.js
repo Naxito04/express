@@ -1,6 +1,7 @@
 import express from 'express'
 import morgan from 'morgan'
 import userRouter from './routes/user.routes.js'
+import { recordatorio } from './cron/cron.js'
 
 const app = express()
 
@@ -24,3 +25,5 @@ app.get('/health', (req, res) => {
 })
 
 app.use('/users', userRouter)
+
+recordatorio()

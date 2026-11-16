@@ -2,3 +2,5 @@
 
 12/11/2026 GET /users Status: 200 Duracon: 5ms
 
+16/11/2026 GET /users Status: 200 Duracon: 3ms
+
